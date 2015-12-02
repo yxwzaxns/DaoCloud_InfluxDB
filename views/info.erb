@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>info</title>
+  </head>
+  <body>
+    <h2>Sin:</h2>
+    <table border="1">
+        <td>
+          <strong>Time</strong>
+        </td>
+        <td>
+          <strong>Radian</strong>
+        </td>
+        <td>
+          <strong>Value</strong>
+        </td>
+      <tr>
+      <% info['results'][0]['series'][0]['values'].each do |item| %>
+        <td><%=item[0] %></td>
+        <td><%=item[1] %></td>
+        <td><%=item[2] %></td>
+      </tr>
+      <% end %>
+    </table>
+  </body>
+</html>
